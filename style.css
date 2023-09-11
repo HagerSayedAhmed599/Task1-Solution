@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   background-image: url('pictures/sky.avif');
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#navbar{
+    display: flex;
+}
+.icon{
+    margin:0% 2% 0% 5%;
+    font-size: 25px;
+}
+.nav-list{
+    background-color: rgba(55, 55, 100, 0.253);
+    width: 60%;
+    height: 80px;
+}
+.nav-list .items-list{
+    display: inline-block;
+    margin-right: 8%;
+    padding-top: 30px;
+}
+.nav-list .items-list a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 28px;
+    font-size: 16px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
+.nav-list .items-list a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+.items-list a[href^="Home"]::before{
+    content: "00 \00a0 \00a0 ";
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.items-list a[href^="Destination"]::before{
+    content: "01 \00a0 \00a0 ";
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.items-list a[href^="Crew"]::before{
+    content: "02 \00a0 \00a0 ";
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.items-list a[href^="Technology"]::before{
+    content: "03 \00a0 \00a0 ";
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.line, .icon{
+   margin-top: 3%;
+}
+.title h3{
+    text-transform: uppercase;
+    padding-left: 10%;
+    letter-spacing: 5px;
+}
+.title h3::before{
+    content: "01 ";
+    font-weight: bold;
+    color: rgb(180, 179, 179);
+    font-size: 35px;
+    
+}
+.countries{
+    text-align: center;
+}
+.countries li{
+        display: inline-block;
+       margin-left: 2%;
+} 
+.countries li a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    display: flex;
+}
+.div-right{
+    width: 50%;
+}
+.details{
+    display: flex;
+    
+}
+.details >div{
+    padding-right: 20%;
+}
+.content-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0% 20% 0% 20%;
+    
+}
+.div-right h1{
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+.head1{
+    font-size: 80px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+.circle{
+    background-color: white;
+    color: black;
+    width: 30%;
+    border-radius: 50%;
+    padding: 5% 0% 5% 0%;
+    margin-left: 35%;
+   
+}
+.circle p{
+    font-size: 30px;
+   
+   
+}
+.tech-content,.crew-content{
+    display: flex;
+    justify-content: space-around;
+}
+.numbersWithparagraph{
+    display: flex;
+}
+.numbers{
+    width: 30%;
+    padding: 0% 3% 0% 15%;
+    text-align: center;
+}
+.numbers h3{
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+    padding: 15%;
+    font-size: 30px;
+}
+.tech-content .paragraph-tech{
+    width: 80%;
+    color: gainsboro;
+    font-size: 25px;
+    line-height: 35px;
+}
+.icons{
+    display: flex;
+     flex-direction: row-reverse; 
+     justify-content: left;
+
+}
+.icons i{
+  margin-right: 2%;
+  font-size: 18px;
+}
+.div-left{
+    margin-left: 10%;
+}
+@media screen and (max-width:1325px){
+   
+   
+     .numbers{
+         width: 40%;
+     }
+ 
+ }
+@media screen and (max-width:1250px){
+  
+    .line{
+        display: none;
+    }
+  
+
+}
+@media screen and (max-width:855px) {
+  
+     .circle{
+        width: 40%;
+        margin-left: 30%;
+     }
+     .div-right{
+        margin-left: 10%;
+     }
+     .numbers{
+        width: 100%;
+    }
+ 
+ }
+ @media screen and (max-width:660px) {
+   
+     .circle{
+        width: 50%;
+        margin-left: 20%;
+     }
+     .numbers{
+        width: 100%;
+        padding: 0% 3% 0% 2%;
+        
+    }
+    .numbers h3{
+        font-size: 25px;
+    }
+    
+   
+ 
+ }
+ @media screen and (max-width:510px) {
+   
+    .circle{
+       width: 75%;
+       margin-left: 10%;
+    }
+    .items-list a[href^="Home"]::before{
+        content: " ";
+      
+    }
+    .items-list a[href^="Destination"]::before{
+        content: " ";
+        
+    }
+    .items-list a[href^="Crew"]::before{
+        content: " ";
+       
+    }
+    .items-list a[href^="Technology"]::before{
+        content: "";
+      
+    }
+    .numbers{
+        width: 100%;
+        padding-right: 10%;
+    }
+
+}
+@media screen and (max-width:350px) {
+   
+    .circle{
+       width: 80%;
+       margin-left: 10%;
+    }
+  
+    .numbers{
+        width: 100%;
+       
+    }
+    
+}
+
+ @media screen and (max-width:1032px) {
+    /*  .nav-list li{
+         display: block;
+     } */
+     .line{
+         display: none;
+     }
+    /*  .numbers{
+        padding: 0% 5% 0% 10%;
+        width: 30%;
+        text-align: center;
+    }  */
+ 
+ } 
+
+ 
+ 
+@media screen and (max-width:1036px){
+ /*  .nav-list .items-list{
+         display: block;
+         padding-top: 10%;
+     } */ 
+     .nav-list .items-list a{
+        padding-bottom: 10px;
+     }
+     
+     .div-right{
+        width: 100%;
+    }
+    .img1 img{
+        width: 100%;
+    }
+    .content,.tech-content,.crew-content{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 8%;
+    }
+    .numbersWithparagraph{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;    
+    }
+  
+   
+ }
+  @media screen and (max-width:600px){
+   
+    .head1{
+      font-size: 70px;
+    } 
+  
+ } 
+ @media screen and (max-width:1175px){
+     
+       
+     /*   .circle{
+        width: 80%;
+        border-radius: 50%;
+        padding: 5%;
+        margin-left: 20%;
+       
+    } */
+   
+    } 
+    @media screen and (max-width:1418px){
+        .nav-list{
+            height: 150px;
+           
+           }
+    }
+    @media screen and (max-width:1190px){
+        .icon{
+            font-size: 40px;
+            margin-top: 10%;
+          }
+       .nav-list{
+        height: 320px;
+        width: 100%;
+        text-align: center;
+        margin-left: 10%;
+       }
+       .nav-list .items-list{
+        display: block;
+        padding-bottom: 20px;
+       }
+     } 
